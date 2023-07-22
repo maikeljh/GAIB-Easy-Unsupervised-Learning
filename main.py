@@ -2,7 +2,6 @@ from src.kmeans import KMeans
 from src.kmedoids import KMedoids
 from src.dbscan import DBSCAN
 import pandas as pd
-import plotly
 
 def main():
     # Pilih algoritma
