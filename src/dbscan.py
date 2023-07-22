@@ -137,8 +137,8 @@ class DBSCAN:
 
                 # Check if noise
                 if len(cluster_labels) > 0:
-                    # Assign the new point to the first cluster found
-                    predicted_labels[i] = cluster_labels[0]
+                    # Assign the new point to the majority cluster found
+                    predicted_labels[i] = np.argmax(np.bincount(cluster_labels))
                 else:
                     predicted_labels[i] = -1
 
